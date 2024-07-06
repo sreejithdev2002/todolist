@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px 0px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
   }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    width: 70%;
+  }
+  
+  li {
+    background-color: #ececec;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
+
+.todolistRight{
+    display: flex;
+    flex-direction: column;
+}
+
+.todolistRight button{
+    margin: 2px 0px;
+}
+  
+  li h3 {
+    margin: 0 0 10px 0;
+    color: #007bff;
+  }
+  
+  li p {
+    margin: 0 0 10px 0;
+    color: #555;
+  }
+  
+  li p.status {
+    margin-bottom: 10px;
+  }
+  
+  li .button-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .todolistDiv{
+    margin: 20px 0px;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    position: relative;
+    top: 25vh;
+}
+
+.Completedcss{
+    color: green;
+}
+
+.NotCompletedcss{
+    color: red;
+}
+
+.notodos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+}
+
+.notodos p{
+    font-size: 28px;
+}
+

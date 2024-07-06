@@ -1,0 +1,13 @@
+.todoForm{
+    height: 10vh;
+    width: 100%;
+    position: relative;
+}
+
+.todoForm h2{
+    margin: 10px 0px;
+}
+
+.todoForm form button{
+    margin: 5px 0px;
+}
